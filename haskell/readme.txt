@@ -1,3 +1,5 @@
+haskell notes
+
 something really cool about purely functional languages is the amount they can achieve
 given such a simple formal system. by the church-turing thesis, a function which operates
 on natural numbers can be calculated by an effective method if and only if it is computable

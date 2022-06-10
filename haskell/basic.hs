@@ -44,7 +44,7 @@ even_numbers = [x * 2 | x <- [1..10]]
 
 -- yea i know im weird..
 waifus = ["emilia", "megumin", "rem", "mai", "hayasaka"]
-honorifics = ["sama", "san", "kun", "chan", "tan"]
+honorifics = ["sama", "san", "chan", "tan"]
 -- im losing it..
 best_girls = [waifu++" "++honorific | honorific <- honorifics, waifu <- waifus]
 bg_index = zip [0..] waifus
