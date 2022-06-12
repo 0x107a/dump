@@ -17,7 +17,8 @@ this laziness allows for elegant solutions to problems which would otherwise req
 much lengthier code to solve.
 
 all types within haskell must be capitalized. this is not a convention, it is enforced by
-the language.
+the language. this allows the developer to encode semantics within the source, which
+therefore leads to more readable code (and technically faster compilation).
 
 haskell operates on the hindley milner type system, which is essentially a restricted
 system F which requires annotations. this means that haskell has things like polymorphism
@@ -25,7 +26,9 @@ and type inference within its system.
 
 within purely functional languages, almost everything is an expression, and all values are
 immutable by default. this includes things like conditionals, which are not technically
-statements but ternary expressions (conditional expressions).
+statements but ternary expressions (conditional expressions). the only exception to which
+procedural statements are allowed within haskell, is via the "do" keyword. this allows
+us to sequentially define statements until the end of the function definition.
 
 within simply typed lambda calculus, types are monomorphic, with the term mono meaning
 singular. each type must represent T -> T. This is not the case with system F, and by product
