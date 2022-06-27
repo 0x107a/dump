@@ -4,7 +4,7 @@ something really cool about purely functional languages is the amount they can a
 given such a simple formal system. by the church-turing thesis, a function which operates
 on natural numbers can be calculated by an effective method if and only if it is computable
 by a turing machine; therefore rendering a simple system like LC turing complete. amazing..
-almost all operators within haskell are also functions, which is something i find very
+all operators within haskell are apparently also functions, which is something i find very
 fascinating due to the fact that it allows us to define our own as well. fp is cool!
 
 a feature of haskell is laziness, which is often praised as a great feature of the language
@@ -65,9 +65,8 @@ had been properly implemented.
 
 this form of polymorphism has been implemented within haskell as well, in the form of type classes.
 with these type classes, we can define our own types, and the actions that operators within the
-language will perform on these types. this is possible since almost all the operators within haskell
-are also functions, as well previously stated. the only real operators within the language are
-*, /, +, and -; which are required for arithmetic.
+language will perform on these types. this is possible since operators within haskell are also functions,
+as previously stated.
 
 important thing to note, the let keyword allows us to define variables within expressions. this is
 the usage of the keyword, as it was a bit confusing as to why this existed when you could leave
@@ -76,4 +75,19 @@ it out when defining variables normally.
 there are a few other forms of polymorphism within haskell like rank-N types and impredictive types,
 but im still a beginner so i will focus on those at another time.
 
-the curry howard isomorphism is
+
+
+
+
+okay im having a bit of trouble understanding higher rank types for haskell. is it sort of like c++
+template metaprogramming in which we are dealing with types, instead of values which have typed
+that describe them? so we can have functions that recieve types (not values, raw types) as parameters
+and return types? is this rank2 types??
+
+we can think of this like c++ templates right? lets say a template was a function that the compiler
+evaluates at compile time; this would technically be a rank 2 function right? when instantiated it
+expects a type, and when substituted at compile time; its "returning" a type?
+
+i could be completely wrong lmao, just brainstorming.
+
+

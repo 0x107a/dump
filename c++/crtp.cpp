@@ -35,15 +35,10 @@ void execute(T& base) {
   return;
 }
 
-// mixins
-
 int main(int argc, char**argv) {
   derived1 d1;
   derived2 d2;
-
   execute(d1);
   execute(d2);
-
-
   return 0;
 }

@@ -1,2 +1,3 @@
--- playing around with haskell's type system & extended type systems
+-- playing with types in haskell
 
+-- custom type class

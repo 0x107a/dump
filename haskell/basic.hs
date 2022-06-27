@@ -90,9 +90,6 @@ is_zero x = if x == 0 then True else False
 foo :: a -> Int
 foo c = 10
 
--- ad-hoc/bounded polymorphism (type classes)
--- view type.hs for examples
-
 -- error function
 -- useful for debugging various functions. fp is elegant and minimal, but complex simplicity
 -- often leads to syntactical/semantic errors ;-;
