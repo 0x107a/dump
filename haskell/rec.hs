@@ -45,3 +45,12 @@ quicksort (x:xs) =
   low ++ [x] ++ high where
     low = quicksort [n | n <- xs, n <= x]
     high = quicksort [n | n <- xs, n > x]
+
+main = do
+  print (and' [True, True, False])
+  print (concat' [[1, 45, 1], [5, 6, 7]])
+  print (replicate' 10 'a')
+  print ([2] !! 0)
+  print (insertionsort [5, 3, 1, 100, 3, 2, 4, 6, 123])
+  print (mergesort [5, 3, 1, 100, 3, 2, 4, 6, 123])
+  print (quicksort [5, 3, 1, 100, 3, 2, 4, 6, 123])

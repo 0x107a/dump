@@ -72,11 +72,10 @@ important thing to note, the let keyword allows us to define variables within ex
 the usage of the keyword, as it was a bit confusing as to why this existed when you could leave
 it out when defining variables normally.
 
-there are a few other forms of polymorphism within haskell like rank-N types and impredictive types,
-but im still a beginner so i will focus on those at another time.
-
-
-
+definition: higher order functions
+higher order functions are functions which work with functions. this means that they can either
+have functions as parameters, or return functions as results. we can encode programming idioms,
+parsers, or algebraic properties within higher order functions.
 
 
 okay im having a bit of trouble understanding higher rank types for haskell. is it sort of like c++
@@ -90,4 +89,8 @@ expects a type, and when substituted at compile time; its "returning" a type?
 
 i could be completely wrong lmao, just brainstorming.
 
+nevermind got confirmation from smart person, i got it.
 
+apparently, within the system F type system, you cant first directly apply the function with a
+value immediately. you have to first apply the higher rank function to get a type, which is then
+applied to a value.

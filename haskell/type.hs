@@ -1,3 +1,4 @@
 -- playing with types in haskell
 
--- custom type class
+-- ad-hoc polmorphism with custom type classes
+-- equivalent to function overloading in C++.
