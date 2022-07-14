@@ -77,20 +77,13 @@ higher order functions are functions which work with functions. this means that 
 have functions as parameters, or return functions as results. we can encode programming idioms,
 parsers, or algebraic properties within higher order functions.
 
+okay so rank n types seem to be a higher rank of parametric polymorphism, in the sense that we
+can apply the forall polymorphic attribute to the signature of our function. this allows our
+polymorphic function to operate with polymorphic functions.
 
-okay im having a bit of trouble understanding higher rank types for haskell. is it sort of like c++
-template metaprogramming in which we are dealing with types, instead of values which have typed
-that describe them? so we can have functions that recieve types (not values, raw types) as parameters
-and return types? is this rank2 types??
+im having some trouble understanding exactly why this is necessary, or why this isnt part of the
+core language; and instead delegated to an extension? is this just a ghc specific feature not
+present within the standard?
 
-we can think of this like c++ templates right? lets say a template was a function that the compiler
-evaluates at compile time; this would technically be a rank 2 function right? when instantiated it
-expects a type, and when substituted at compile time; its "returning" a type?
-
-i could be completely wrong lmao, just brainstorming.
-
-nevermind got confirmation from smart person, i got it.
-
-apparently, within the system F type system, you cant first directly apply the function with a
-value immediately. you have to first apply the higher rank function to get a type, which is then
-applied to a value.
+yea its only a ghc extension lol. there should be some pattern to achieve the same outcomes no?
+else this would be present within standard haskell as well.

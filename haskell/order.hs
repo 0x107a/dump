@@ -7,7 +7,7 @@ twice :: (a -> a) -> a -> a
 twice f x = f (f x)
 -- map higher order function usage
 -- filter higher order function usage
-
+filter' p xs = [x | x <- xs, p x]
 
 
 -- exercise: implement a for loop function

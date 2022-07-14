@@ -1,4 +1,9 @@
--- playing with types in haskell
+data Point = Point Double Double
+  deriving (Show, Eq)
 
--- ad-hoc polmorphism with custom type classes
--- equivalent to function overloading in C++.
+
+
+main :: IO ()
+main = undefined
+
+

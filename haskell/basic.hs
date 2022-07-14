@@ -1,28 +1,30 @@
--- basic haskell
--- resources:
--- http://learnyouahaskell.com
--- https://en.wikibooks.org/wiki/Haskell/
--- https://wiki.haskell.org/
---
--- playing with basic syntax, semantics and types within the language
--- reference:
--- head - returns the first element within a list
--- last - returns the last element within a list
--- tail - returns a list with the first element removed from the list
--- init - returns a list with the last element removed from the list
--- length - returns length of a list
--- null - checks if a list empty and returns a boolean
--- reverse - returns a reversed list
--- take - takes an integer and a list, and removes the n elements from the front of the list
--- drop - takes an integer and a list, and removes the n elements from the back of the list
--- minimum - returns the element within the list with the lowest value
--- maximum - returns the element within the list with the highest value
--- sum - returns the sum of all the elements within the list
--- product - returns the product of all elements within the list
--- elem - checks if an element exists within a list, returns a boolean
--- cycle - takes a list and repeats it infinitely, cut off with "take" function
--- repeat - takes an element and repeats it infinitely, cut off with "take" function
--- zip - produces a list of pairs from two lists
+{-
+  basic haskell
+  resources:
+  http://learnyouahaskell.com
+  https://en.wikibooks.org/wiki/Haskell/
+  https://wiki.haskell.org/
+
+  playing with basic syntax, semantics and types within the language
+  reference:
+  head - returns the first element within a list
+  last - returns the last element within a list
+  tail - returns a list with the first element removed from the list
+  init - returns a list with the last element removed from the list
+  length - returns length of a list
+  null - checks if a list empty and returns a boolean
+  reverse - returns a reversed list
+  take - takes an integer and a list, and removes the n elements from the front of the list
+  drop - takes an integer and a list, and removes the n elements from the back of the list
+  minimum - returns the element within the list with the lowest value
+  maximum - returns the element within the list with the highest value
+  sum - returns the sum of all the elements within the list
+  product - returns the product of all elements within the list
+  elem - checks if an element exists within a list, returns a boolean
+  cycle - takes a list and repeats it infinitely, cut off with "take" function
+  repeat - takes an element and repeats it infinitely, cut off with "take" function
+  zip - produces a list of pairs from two lists
+-}
 
 -- basic types & Prelude functions
 integer = 2 :: Integer

@@ -46,6 +46,9 @@ quicksort (x:xs) =
     low = quicksort [n | n <- xs, n <= x]
     high = quicksort [n | n <- xs, n > x]
 
+-- tail recursion
+
+
 main = do
   print (and' [True, True, False])
   print (concat' [[1, 45, 1], [5, 6, 7]])
